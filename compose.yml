@@ -1,0 +1,19 @@
+services:
+  article-management:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: article_management_db
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5444:5432"
+    volumes:
+      - article-management-data:/var/lib/postgresql/data
+    networks:
+      - article-management-network
+
+volumes:
+  article-management-data:
+networks:
+  article-management-network:
