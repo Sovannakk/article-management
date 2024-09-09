@@ -1,5 +1,6 @@
-package com.kshrd.articlemanagement.model;
+package com.kshrd.articlemanagement.model.dto.request;
 
+import com.kshrd.articlemanagement.model.Article;
 import lombok.*;
 
 import java.time.LocalDate;

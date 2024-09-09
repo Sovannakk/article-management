@@ -1,7 +1,7 @@
 package com.kshrd.articlemanagement.service;
 
 import com.kshrd.articlemanagement.model.Article;
-import com.kshrd.articlemanagement.model.ArticleRequest;
+import com.kshrd.articlemanagement.model.dto.request.ArticleRequest;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@ package com.kshrd.articlemanagement.service.serviceimpl;
 
 import com.kshrd.articlemanagement.exception.NotFoundException;
 import com.kshrd.articlemanagement.model.Article;
-import com.kshrd.articlemanagement.model.ArticleRequest;
+import com.kshrd.articlemanagement.model.dto.request.ArticleRequest;
 import com.kshrd.articlemanagement.repository.ArticleRepository;
 import com.kshrd.articlemanagement.service.ArticleService;
 import lombok.RequiredArgsConstructor;
