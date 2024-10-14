@@ -51,7 +51,32 @@ public class ArticleController {
                         .payload(articleService.saveArticle(articleRequest))
                         .status(HttpStatus.OK)
                         .timestamp(LocalDateTime.now())
-                        .build()
+                        .build()awdawd
+                awdawd
+        );
+    }
+    @PostMapping
+    public ResponseEntity<ApiResponse<Article>> createArticle(@RequestBody ArticleRequest articleRequest) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(
+                ApiResponse.<Article>builder()
+                        .message("Create article successfully")
+                        .payload(articleService.saveArticle(articleRequest))
+                        .status(HttpStatus.OK)
+                        .timestamp(LocalDateTime.now())
+                        .build()awdawd
+                awdawd
+        );
+    }
+    @PostMapping
+    public ResponseEntity<ApiResponse<Article>> createArticle(@RequestBody ArticleRequest articleRequest) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(
+                ApiResponse.<Article>builder()
+                        .message("Create article successfully")
+                        .payload(articleService.saveArticle(articleRequest))
+                        .status(HttpStatus.OK)
+                        .timestamp(LocalDateTime.now())
+                        .build()awdawd
+                awdawd
         );
     }
 
