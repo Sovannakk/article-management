@@ -55,6 +55,42 @@ public class ArticleController {
         );
     }
 
+    @PostMapping
+    public ResponseEntity<ApiResponse<Article>> createArtic4le(@RequestBody ArticleRequest articleRequest) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(
+                ApiResponse.<Article>builder()
+                        .message("Create article successfully")
+                        .payload(articleService.saveArticle(articleRequest))
+                        .status(HttpStatus.OK)
+                        .timestamp(LocalDateTime.now())
+                        .build()
+        );
+    }
+
+    @PostMapping
+    public ResponseEntity<ApiResponse<Article>> createArticle4(@RequestBody ArticleRequest articleRequest) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(
+                ApiResponse.<Article>builder()
+                        .message("Create article successfully")
+                        .payload(articleService.saveArticle(articleRequest))
+                        .status(HttpStatus.OK)
+                        .timestamp(LocalDateTime.now())
+                        .build()
+        );
+    }
+
+    @PostMapping
+    public ResponseEntity<ApiResponse<Article>> createArticle2(@RequestBody ArticleRequest articleRequest) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(
+                ApiResponse.<Article>builder()
+                        .message("Create article successfully")
+                        .payload(articleService.saveArticle(articleRequest))
+                        .status(HttpStatus.OK)
+                        .timestamp(LocalDateTime.now())
+                        .build()
+        );
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<ApiResponse<Article>> updateArticle(@PathVariable Long id, @RequestBody ArticleRequest articleRequest) {
         return ResponseEntity.ok(
